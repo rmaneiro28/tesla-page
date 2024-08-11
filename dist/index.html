@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v2.4.5">
+    <title>Tesla - El coche de tus sueños (y de Elon Musk)</title>
+  <link rel="stylesheet" href="/_astro/index.94fda682.css" /><script type="module">function f(){return navigator.userAgent.indexOf("Edge")>-1||navigator.userAgent.indexOf("Edg")>-1}let i=document.querySelector("#bg-image-accessories");f()?i.src="accessories.webp":i.src="accessories.avif";const E=document.querySelector("#landing-header"),y={root:null,rootMargin:"0px",threshold:.9},v=new IntersectionObserver(e=>{e.forEach(n=>{const{isIntersecting:r}=n;if(r){const o=n.target.getAttribute("data-header-color");E.style.color=o}})},y),p=document.querySelectorAll(".landing-section");p.forEach(e=>v.observe(e));const b=document.querySelectorAll("#landing-header li"),t=document.querySelector("#menu-backdrop");b.forEach(e=>{e.addEventListener("mouseenter",()=>{const{left:n,top:r,width:o,height:m}=e.getBoundingClientRect();t.style.setProperty("--left",`${n}px`),t.style.setProperty("--top",`${r}px`),t.style.setProperty("--width",`${o}px`),t.style.setProperty("--height",`${m}px`),t.style.opacity="1",t.style.visibility="visible"}),e.addEventListener("mouseleave",()=>{t.style.opacity="0",t.style.visibility="hidden"})});const x=document.getElementById("menu-btn"),u=document.querySelector("#modal-menu"),h=u.querySelectorAll("li>a "),w=document.querySelector("#close-btn");function s(){u.classList.toggle("hidden")}x.addEventListener("click",s);w.addEventListener("click",s);h.forEach(e=>{e.addEventListener("click",s)});function A(){return navigator.userAgent.indexOf("Edge")>-1||navigator.userAgent.indexOf("Edg")>-1}let l=document.querySelector("#bg-image-models");A()?l.src="model-s.webp":l.src="model-s.avif";function O(){return navigator.userAgent.indexOf("Edge")>-1||navigator.userAgent.indexOf("Edg")>-1}let c=document.querySelector("#bg-image-model3");O()?c.src="model-3.webp":c.src="model-3.avif";function $(){return navigator.userAgent.indexOf("Edge")>-1||navigator.userAgent.indexOf("Edg")>-1}let d=document.querySelector("#bg-image-modelx");$()?d.src="model-x.webp":d.src="model-x.avif";function q(){return navigator.userAgent.indexOf("Edge")>-1||navigator.userAgent.indexOf("Edg")>-1}let a=document.querySelector("#bg-image-modely");q()?a.src="model-y.webp":a.src="model-y.avif";function S(){return navigator.userAgent.indexOf("Edge")>-1||navigator.userAgent.indexOf("Edg")>-1}let g=document.querySelector("#bg-image-powerwall");S()?g.src="powerwall.webp":g.src="powerwall.avif";
+</script></head>
+  <body>
+    
+  <header id="landing-header" class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
+  <div class="flex flex-grow basis-0">
+    <a href="./"><svg class="h-6 w-28 transition-colors duration-500" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path></svg></a>
+  </div>
+
+  <nav class="hidden xl:block sm:hidden">
+    <ul class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+      <li><a href="#model-s">Model S</a></li>
+      <li><a href="#model-3">Model 3</a></li>
+      <li><a href="#model-x">Model X</a></li>
+      <li><a href="#model-y">Model Y</a></li>
+      <li><a href="#powerwall">Powerwall</a></li>
+      <li><a href="#accesorios">Carga</a></li>
+    </ul>
+  </nav>
+
+  <nav class="flex flex-grow justify-end basis-0">
+    <ul class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+      <li class="hidden xl:block sm:hidden"><a href="#">Tienda</a></li>
+      <li class="hidden xl:block sm:hidden"><a href="#">Cuenta</a></li>
+      <li><a id="menu-btn" href="#">Menú</a></li>
+    </ul>
+  </nav>
+
+  <nav id="modal-menu" class=" hidden xl:hidden flex flex-col bg-white fixed top-0 left-0 right-0 bottom-0 ">
+    <button id="close-btn" class=" w-screen flex justify-end p-5">
+      <img class="text-black h-6 " src="/close-icon.svg" alt="close image">
+    </button>
+      <ul class="flex flex-col mt-4 [&>li>a]:transition-colors [&>li]:m-3  [&>li>a]:flex [&>li>a]:justify-between [&>li>a]:duration-200 [&>li>a]:text-black [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-6 [&>li>a]:py-3 [&>li>a]:rounded-md [&>li>a]:w-full">
+        <li><a class="hover:bg-slate-100" href="#home"> Home <img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a> </li>
+        <li><a class="hover:bg-slate-100" href="#model-s">Model S<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
+        <li><a class="hover:bg-slate-100" href="#model-3">Model 3<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
+        <li><a class="hover:bg-slate-100" href="#model-x">Model X<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
+        <li><a class="hover:bg-slate-100" href="#model-y">Model Y<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
+        <li><a class="hover:bg-slate-100" href="#powerwall">Powerwall<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
+        <li><a class="hover:bg-slate-100" href="#accesorios">Carga<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
+    </ul>
+  </nav>
+
+  <div id="menu-backdrop" class="
+      absolute bg-black/5 backdrop-blur-lg rounded
+      translate-x-[var(--left)] translate-y-[var(--top)]
+      left-0 top-0
+      w-[var(--width)] h-[var(--height)]
+      transition-all duration-500
+      ease-in-out opacity-0 -z-10
+    ">
+  </div>
+</header>
+
+  <main class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="white" id="home">
+  <div class="z-30 relative h-full flex flex-col">
+    <header>
+      <h2 class="text-white pt-40 text-[40px] font-medium">
+        Disfrute de tesla
+      </h2>
+      <p class="text-white text-sm">
+        Programe una prueba de conducción hoy mismo
+      </p>
+    </header>
+
+    <footer class="flex flex-col flex-grow justify-end pb-20">
+      <div>
+    <a class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors" href="#">
+      Prueba de conducción</a>
+  </div>
+      <!-- Contidionally load footer: -->
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 h-full w-full z-10">
+    <video class="object-center object-cover h-full w-full" autoplay muted loop src="/video.webm"></video>
+  </div>
+</section>
+    </div>
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black" id="model-y">
+  <div class="z-30 relative h-full flex flex-col">
+    <header>
+      <h2 class="text-black pt-40 text-[40px] font-medium">
+        Model Y
+      </h2>
+      <p class="text-black text-sm">
+        Concertar una prueba de conducción
+      </p>
+    </header>
+
+    <footer class="flex flex-col flex-grow justify-end pb-20">
+      <div class="gap-x-6 flex mx-auto">
+    <a class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500" href="#">
+      Explorar inventario</a>
+    <a class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black" href="#">
+      Pedido personalizado</a>
+  </div>
+      <!-- Contidionally load footer: -->
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img alt="Model Y" class="h-full w-full object-cover object-center bg-image" src="model-y.avif" id="bg-image-modely">
+  </div>
+</section>
+    </div>
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black" id="model-3">
+  <div class="z-30 relative h-full flex flex-col">
+    <header>
+      <h2 class="text-black pt-40 text-[40px] font-medium">
+        Model 3
+      </h2>
+      <p class="text-black text-sm">
+        Concertar una prueba de conducción
+      </p>
+    </header>
+
+    <footer class="flex flex-col flex-grow justify-end pb-20">
+      <div class="gap-x-6 flex mx-auto">
+    <a class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500" href="#">
+      Explorar inventario</a>
+    <a class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black" href="#">
+      Pedido personalizado</a>
+  </div>
+      <!-- Contidionally load footer: -->
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img alt="Model 3" class="h-full w-full object-cover object-center" src="model-3.avif" id="bg-image-model3">
+  </div>
+</section>
+    </div>
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black" id="model-s">
+  <div class="z-30 relative h-full flex flex-col">
+    <header>
+      <h2 class="text-black pt-40 text-[40px] font-medium">
+        Model S
+      </h2>
+      <p class="text-black text-sm">
+        Programe una consulta virtual
+      </p>
+    </header>
+
+    <footer class="flex flex-col flex-grow justify-end pb-20">
+      <div class="gap-x-6 flex mx-auto">
+    <a class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500" href="#">
+      Pedido personalizado</a>
+    <a class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black" href="#">
+      Saber más</a>
+  </div>
+      <!-- Contidionally load footer: -->
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img alt="Model S" class="h-full w-full object-cover object-center" src="model-s.avif" id="bg-image-models">
+  </div>
+</section>
+    </div>
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black" id="model-x">
+  <div class="z-30 relative h-full flex flex-col">
+    <header>
+      <h2 class="text-black pt-40 text-[40px] font-medium">
+        Model X
+      </h2>
+      <p class="text-black text-sm">
+        Programe una consulta virtual
+      </p>
+    </header>
+
+    <footer class="flex flex-col flex-grow justify-end pb-20">
+      <div class="gap-x-6 flex mx-auto">
+    <a class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500" href="#">
+      Pedido personalizado</a>
+    <a class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black" href="#">
+      Saber más</a>
+  </div>
+      <!-- Contidionally load footer: -->
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img alt="Model X" class="h-full w-full object-cover object-center" src="model-x.avif" id="bg-image-modelx">
+  </div>
+</section>
+    </div>
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black" id="powerwall">
+  <div class="z-30 relative h-full flex flex-col">
+    <header>
+      <h2 class="text-black pt-40 text-[40px] font-medium">
+        Solar y Powerwall
+      </h2>
+      <p class="text-black text-sm">
+        Energía para todos
+      </p>
+    </header>
+
+    <footer class="flex flex-col flex-grow justify-end pb-20">
+      <div class="gap-x-6 flex mx-auto">
+    <a class="border-[3px] border-gray-800 bg-gray-800 text-sm rounded font-medium text-white px-16 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500" href="#">
+      Saber más</a>
+    <!-- <a
+      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
+      href="#"
+    >
+      Saber más</a
+    > -->
+  </div>
+      <!-- Contidionally load footer: -->
+      
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img alt="Solar y Powerwall" class="h-full w-full object-cover object-center" src="powerwall.avif" id="bg-image-powerwall">
+  </div>
+</section>
+    </div>
+    <div class="snap-center">
+      <section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative" data-header-color="black" id="accesorios">
+  <div class="z-30 relative h-full flex flex-col">
+    <header>
+      <h2 class="text-black pt-40 text-[40px] font-medium">
+        Accesorios
+      </h2>
+      <p class="text-black text-sm">
+        
+      </p>
+    </header>
+
+    <footer class="flex flex-col flex-grow justify-end pb-20">
+      <div class="gap-x-6 flex mx-auto">
+    <a class="border-[3px] border-black bg-black text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors duration-300 hover:border-gray-800 hover:bg-gray-800" href="#">
+      Comprar ahora</a>
+    <!-- <a
+      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
+      href="#"
+    >
+      Saber más</a
+    > -->
+  </div>
+      <!-- Contidionally load footer: -->
+      <footer class="py-3 px-10 flex justify-center items-center absolute bottom-0 w-full z-40 text-gray-600 text-xs font-medium" id="landing-footer">
+	<nav>
+		<ul class="flex [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2">
+			<li><a href="#">Tesla © 2023</a></li>
+			<li><a href="#">Privacidad y legal</a></li>
+			<li><a href="#">Contacto</a></li>
+			<li><a href="#">Noticias</a></li>
+			<li><a href="#">Seguir informado</a></li>
+			<li><a href="#">Localización de tiendas</a></li>
+		</ul>
+	</nav>
+</footer>
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img alt="Accesorios" class="h-full w-full object-cover object-center" src="accessories.avif" id="bg-image-accessories">
+  </div>
+</section>
+    </div>
+  </main>
+
+  </body></html>
